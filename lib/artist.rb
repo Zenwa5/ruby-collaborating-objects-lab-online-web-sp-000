@@ -19,13 +19,14 @@ class Artist
   def self.all
     @@all
   end
+  
   def save
     @@all << self
     self
   end
 
   def self.find_or_create_by_name
-
+     @@all.find {|artist| artist.name == name} || self.new(name).save
   end
 
   def print_songs
