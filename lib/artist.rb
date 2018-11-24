@@ -8,7 +8,7 @@ class Artist
   end
 
   def add_song
-    
+    @@song_count += 1
   end
 
   def save
