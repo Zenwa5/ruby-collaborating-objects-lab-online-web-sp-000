@@ -16,6 +16,9 @@ class Artist
     @@song_count += 1
   end
 
+  def self.all
+    @@all
+  end
   def save
     @@all << self
     self
